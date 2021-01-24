@@ -1,0 +1,315 @@
+<html lang="en">
+<head>
+<title>Jha_Final Project</title>
+<body bgcolor="darkseagreen">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 550px; 
+  background: #ccc;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 550px; 
+}
+
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<center><h1>Kalol Jha Final Project</h1></center>
+<center><p>I am a student at Rutgers New Brunswick majoring in Information Technology and Informatics and this is my final project for Web Design.</p></center>
+
+
+<header>
+  <script language="JavaScript">
+
+function XmasDays(CurrentDay) {
+
+}
+function MonthTxt (MonthNumber) {
+   var Month=new Array();
+   Month[1]="January";
+   Month[2]="February";
+   Month[3]="March";
+   Month[4]="April";
+   Month[5]="May";
+   Month[6]="June";
+   Month[7]="July";
+   Month[8]="August";
+   Month[9]="September";
+   Month[10]="October";
+   Month[11]="November";
+   Month[12]="December";
+return Month[MonthNumber];
+}
+</script>
+</head>
+<body>
+  <script language="JavaScript">
+   <!-- Hide from non-JavaScript browsers
+   var Today=new Date();
+   var ThisDay=Today.getDate();
+   var ThisMonth=Today.getMonth()+1;
+   var ThisYear=Today.getFullYear();
+   var DaysLeft=XmasDays(Today);
+   var MonthName=MonthTxt(ThisMonth);
+document.write("Today is "+MonthName+" "+ThisDay+"<br>");
+   if (DaysLeft > 0) {
+      document.write("Only "+DaysLeft+" days until Independence Day");
+   } else {
+   }
+   // Stop hiding -->
+</script>  
+  
+<style> 
+  body{  
+    background: #8FBC8F; 
+  font-family: sans-serif; 
+  font-weight: 50; 
+} 
+ #clockdiv{ 
+    font-family: sans-serif; 
+    color: #fff; 
+    display: inline-block; 
+    font-weight: 100; 
+    text-align: center; 
+    font-size: 20px; 
+} 
+#clockdiv > div{ 
+    padding: 10px; 
+    border-radius: 3px; 
+    background: #8FBC8F; 
+    display: inline-block; 
+} 
+#clockdiv div > span{ 
+    padding: 15px; 
+    border-radius: 3px; 
+    background: #00816A; 
+    display: inline-block; 
+} 
+smalltext{ 
+    padding-top: 5px; 
+    font-size: 16px; 
+} 
+</style> 
+</head> 
+<body> 
+<h5>Days Left Until Independence Day</h5> 
+<div id="clockdiv"> 
+  <div> 
+    <span class="days" id="day"></span> 
+    <div class="smalltext">Days</div> 
+  </div> 
+  <div> 
+    <span class="hours" id="hour"></span> 
+    <div class="smalltext">Hours</div> 
+  </div> 
+  <div> 
+    <span class="minutes" id="minute"></span> 
+    <div class="smalltext">Minutes</div> 
+  </div> 
+  <div> 
+    <span class="seconds" id="second"></span> 
+    <div class="smalltext">Seconds</div> 
+  </div> 
+</div> 
+  
+<p id="demo"></p> 
+  
+<script> 
+  
+var deadline = new Date("Jul 4, 2020").getTime(); 
+  
+var x = setInterval(function() { 
+  
+var now = new Date().getTime(); 
+var t = deadline - now; 
+var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+var seconds = Math.floor((t % (1000 * 60)) / 1000); 
+document.getElementById("day").innerHTML =days ; 
+document.getElementById("hour").innerHTML =hours; 
+document.getElementById("minute").innerHTML = minutes;  
+document.getElementById("second").innerHTML =seconds;  
+if (t < 0) { 
+        clearInterval(x); 
+        document.getElementById("demo").innerHTML = "Happy Independence Day"; 
+        document.getElementById("day").innerHTML ='0'; 
+        document.getElementById("hour").innerHTML ='0'; 
+        document.getElementById("minute").innerHTML ='0' ;  
+        document.getElementById("second").innerHTML = '0'; } 
+}, 1000); 
+</script>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <p>Here is a link to<a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=CAD"> convert US dollars to Canadian dollars.</a>.</p>
+      <p>Research on <a href="file:///C:/Users/kalol/Downloads/Recent%20Development%20in%20Web%20Technology.pdf">Recent Development in Web Design</a>.</p>
+      <p>Research on <a href="file:///C:/Users/kalol/Downloads/MySQL%20Database.pdf">MySQL Database</a>.</p>
+<br>
+<hr>
+<h4>Coin Tossing Game</h4>
+<table>
+  <tr>
+    <th><div id=headsCount>
+      <h5>Heads</h5>
+      <p id="headsResultPara">0</p>
+    </div></th>
+    <th><div id=tailsCount>
+      <h5>Tails</h5>
+      <p id="tailsResultPara">0</p>
+    </div></th> 
+  <div id="coin-wrapper">
+      <div id="coin" class="heads">  
+      </div>
+      </tr>
+    </table>
+    <p>The Coin has landed on <span id="result">Heads</span></p>
+      <button id="flipButton">Flip Coin</button>
+      <button id="resetButton">Reset</button>
+</div>
+<script>
+var resultText = document.getElementById("result");
+var coin = document.getElementById("coin");
+var headsScore = 0;
+var tailsScore = 0;
+var headsCount = document.getElementById("headsResultPara");
+var tailsCount = document.getElementById("tailsResultPara");
+function coinFlip() {
+var randomNumber = Math.floor((Math.random() * 10) +1); 
+  if (randomNumber >= 5) {
+    coin.className="heads";
+    headsScore ++;
+    headsCount.innerHTML = headsScore;
+  } else {
+    coin.className="tails";
+    tailsScore ++;
+    tailsCount.innerHTML = tailsScore;
+  }
+  coinResult();
+}
+document.getElementById("flipButton").addEventListener("click", coinFlip);
+function coinResult() {
+  if (coin.className === "heads") {
+    resultText.innerHTML="Heads";
+  } else {
+    resultText.innerHTML="Tails";
+  }
+} 
+   document.getElementById("resetButton").addEventListener("click", reset);  
+
+  function reset() {
+    headsScore = 0;
+    headsCount.innerHTML = headsScore;
+    tailsScore = 0;
+    tailsCount.innerHTML = tailsScore;
+  }
+  </script>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2>Places I'd Like to Visit:</h2>
+    <p>These are links to more information about the places I'd like to visit:</p>
+    <center><table style="width:90%"> 
+      <style>
+      table{ 
+        }
+        th,td{ 
+      width: 300px; 
+      text-align: center;  
+      } 
+    </style>
+  <tr>
+    <th>Cherry blossom season in Tokyo, Japan</th>
+    <th>Brazil's culture and scenery</th>
+    <th>The islands of Bora Bora</th>
+  </tr>
+  <tr>
+    <td><a href="https://www.jrailpass.com/blog/cherry-blossoms-tokyo"> Find out more about the best spots and festivals in Tokyo to see cherry blossoms</a></td>
+    <td><a href="https://www.planetware.com/tourist-attractions/brazil-bra.htm"> Things to see in Brazil</a></td>
+    <td><a href="https://tahititourisme.com/en-us/island/bora-bora/"> Explore more about Bora Bora</a></td>
+  </tr>
+  <tr>
+    <td><img src="https://img.travel.rakuten.co.jp/mytrip/content/trend/hanami-tokyo/images/key.jpg" alt="https://travel.rakuten.com/campaign/ranking/hanami/tokyo/" style="width:142px;height:142px;"></td>
+    <td><img src="https://www.planetware.com/photos-large/BRA/brazil-rio-de-janeiro-cristo-redentor.jpg" alt="https://www.planetware.com/tourist-attractions/brazil-bra.htm" style="width:142px;height:142px;"></td>
+    <td><img src="https://pix10.agoda.net/hotelImages/336/336870/336870_16042115000041680438.jpg?s=1024x768" alt="https://www.agoda.com/bora-bora-pearl-beach-resort-and-spa/hotel/bora-bora-island-pf.html?cid=1844104"style="width:142px;height:142px;"></td>
+  </tr>
+</table></center>
+<br>
+<hr>
+<script>
+function jump_to_link(weblist) {
+var url_number=weblist.selectedIndex;
+location=weblist.options[url_number].value;
+}
+</script>
+<h2 >Favorite Sites on the Web</h2>
+<p>These are my favorite websites:</p>
+
+<form name="glinks">
+<table cellpadding="5">
+<tr>
+<td>Favorite websites</td>
+<td>
+   <select name="leg" onchange="jump_to_link(this);">
+   <option value="javascript:location.reload()">Select a Web page on the favorites
+   <option value="https://www.netflix.com/browse">Netflix: Netflix Browse
+   <option value="https://www.youtube.com/">Youtube: Video Sharing
+   <option value="https://www.instagram.com/">Instagram: Social Media
+   <option value="https://twitter.com/home">Twitter: Social Media
+   <option value="https://mail.google.com/mail/u/0/">Gmail: Email
+   
+   </select>
+</td>
+</tr>
+</table>
+</form>
+  </article>
+</section>
+</body>
+</html>
