@@ -12,4 +12,5 @@ Final HTML Programming Project for Web Design
 2. Have a look at the attached page (links1.html), which was discussed in class and modify it to create links to your five favorite websites. (JavaScript)
 3. Do a research on the Internet about the recent developments in the area of web technology (node.js) and put your response in a word document and create a link to it from your home page and submit it (approx 200 words). You should submit your home page and all the other pages mentioned above to the Instructor. You should put all the pages in a folder and submit it.
 4. Do a research on the Internet about MySQL database and put your response in a word document and create a link to it from your home page and submit it. (Approx 200 words)
+
 You should design the pages appropriately adding images, graphics and appropriate colors and design to make the pages attractive, presentable, accessible, and responsive. Also appropriate data validation should be performed on the data entered.
